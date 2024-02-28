@@ -4,7 +4,6 @@ import random
 import jellyfish
 import os
 import numpy as np
-import pytesseract
 import skimage
 import cv2
 
