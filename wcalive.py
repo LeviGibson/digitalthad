@@ -44,4 +44,3 @@ def get_results(regId, event, round):
                 if r['round']['competitionEvent']['event']['id'] == event:
                     if r['round']['number'] == round:
                         return list(z['result'] for z in r['attempts'])
-                

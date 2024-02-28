@@ -41,3 +41,4 @@ for i in imgs:
 
     plt.imshow(img)
     plt.show()
+    
