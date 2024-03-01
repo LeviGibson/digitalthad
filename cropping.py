@@ -43,6 +43,9 @@ def scan_for_references(img):
     
     # plt.imshow(img)
     # plt.show()
+    
+    # plt.imshow(img)
+    # plt.show()
     # pass
     return img
 
@@ -176,38 +179,40 @@ def split_boxes(img):
         "comp": []
     }
     
+    127
+    
     split['event'].append(img[195:263, 132:806])
     split['round'].append(img[195:263, 813:942])
     split['id'].append(img[335:403, 132:278])
     split['name'].append(img[335:403, 285:1072])
     
-    split['scr'].append(img[514:620,132:259])
-    split['scr'].append(img[653:759,132:259])
-    split['scr'].append(img[793:899,132:259])
-    split['scr'].append(img[932:1038,132:259])
-    split['scr'].append(img[1071:1177,132:259])
-    split['scr'].append(img[1256:1362,132:259])
+    split['scr'].append(img[514:620,132:260])
+    split['scr'].append(img[653:653+106,132:260])
+    split['scr'].append(img[793:793+106,132:260])
+    split['scr'].append(img[932:932+106,132:260])
+    split['scr'].append(img[1071:1071+106,132:260])
+    split['scr'].append(img[1256:1256+106,132:260])
     
-    split['time'].append(img[514:620,265:805])
-    split['time'].append(img[653:759,265:805])
-    split['time'].append(img[793:899,265:805])
-    split['time'].append(img[932:1038,265:805])
-    split['time'].append(img[1071:1177,265:805])
-    split['time'].append(img[1256:1362,265:805])
+    split['time'].append(img[514:514+106,265:805])
+    split['time'].append(img[653:653+106,265:805])
+    split['time'].append(img[793:793+106,265:805])
+    split['time'].append(img[932:932+106,265:805])
+    split['time'].append(img[1071:1071+106,265:805])
+    split['time'].append(img[1256:1256+106,265:805])
     
-    split['judge'].append(img[514:620,811:939])
-    split['judge'].append(img[653:759,811:939])
-    split['judge'].append(img[793:899,811:939])
-    split['judge'].append(img[932:1038,811:939])
-    split['judge'].append(img[1071:1177,811:939])
-    split['judge'].append(img[1256:1362,811:939])
+    split['judge'].append(img[514:514+106,811:939])
+    split['judge'].append(img[653:653+106,811:939])
+    split['judge'].append(img[793:793+106,811:939])
+    split['judge'].append(img[932:932+106,811:939])
+    split['judge'].append(img[1071:1071+106,811:939])
+    split['judge'].append(img[1256:1256+106,811:939])
     
-    split['comp'].append(img[514:620,945:1072])
-    split['comp'].append(img[653:759,945:1072])
-    split['comp'].append(img[793:899,945:1072])
-    split['comp'].append(img[932:1038,945:1072])
-    split['comp'].append(img[1071:1177,945:1072])
-    split['comp'].append(img[1256:1362,811:939])
+    split['comp'].append(img[514:514+106,945:1073])
+    split['comp'].append(img[653:653+106,945:1073])
+    split['comp'].append(img[793:793+106,945:1073])
+    split['comp'].append(img[932:932+106,945:1073])
+    split['comp'].append(img[1071:1071+106,945:1073])
+    split['comp'].append(img[1256:1256+106,945:1073])
     
     # for id, i in enumerate(split['comp']):
     #     plt.imsave(str(id)+".png", i)
