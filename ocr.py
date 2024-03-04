@@ -260,6 +260,17 @@ eventIds = ["222", "333", "333bf", "333oh", "444", "444bf", "555", "555bf", "666
 def read_event(obj):
     text = read_printed_header(obj, number=False)
     
+    if text == None:
+        print("event unreadable")
+        print("type \"skip\" if you would like to skip this card because it's stupid and dumb")
+        print("type \"show\" if you would like to view the whole card")
+        plt.imsave("ref.png", obj)
+        text = (input("What does the box say??? (plain text):"))
+        if text.lower() == "skip":
+            return "skip"
+        if text.lower() == "show":
+            return "show"
+    
     maxVal = -10000
     maxObj = None
     for i in range(len(eventIds)):

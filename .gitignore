@@ -1,3 +1,8 @@
 tmp/*
 raw/*
 0.png
+dataset/imgs/*
+dataset/Cardinal/*
+dataset/Naticube/*
+ocr/imgs/*
+ocr/digets/*

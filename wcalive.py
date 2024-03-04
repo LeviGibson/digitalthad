@@ -8,6 +8,9 @@ from pprint import pprint
 
 #https://cloud.hasura.io/public/graphiql?endpoint=https%3A%2F%2Flive.worldcubeassociation.org%2Fapi
 
+#Naticube: 4451
+#Cardinal: 4469
+
 body = """
 query MyQuery {
   competition(id: "4451") {

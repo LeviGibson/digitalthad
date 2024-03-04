@@ -33,10 +33,8 @@ def scan_for_references(img):
     
     #loading in referenaces (kernels)
     ref1 = np.array(Image.open("ref1.jpg"))
-    ref2 = np.array(Image.open("ref2.jpg"))
     
     ref1loc = scan(img, ref1)
-    ref2loc = scan(img, ref2)
     
     # print(ref1loc, ref2loc)
     img = img[ref1loc[1]-1200:ref1loc[1]+200, ref1loc[0]-50:ref1loc[0]+1100]
@@ -124,7 +122,7 @@ def find_lines(image):
         # if(hierarchy[i][2] < 0 and hierarchy[i][3] < 0):
         #     continue
         
-        cv2.drawContours(image, [box], -1, (0, 255, 0), 2)
+        # cv2.drawContours(image, [box], -1, (0, 255, 0), 2)
         
         # if (abs(cv2.contourArea(contour) - (rect[1][0] * rect[1][1])) / cv2.contourArea(contour)) > .15:
         #     continue
